@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcards</title>
+
+  <!-- connects external CSS file -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <!-- top navigation bar -->
+  <nav class="navbar">
+
+    <h1>Sheet Music Guide</h1>
+
+    <!-- navigation links -->
+    <div>
+      <a href="index.html">Home</a>
+      <a href="notes.html">Notes</a>
+      <a href="key-signatures.html">Keys</a>
+      <a href="rhythm.html">Rhythm</a>
+      <a href="quiz.html">Flashcards</a>
+    </div>
+
+  </nav>
+
+  <!-- page introduction -->
+  <section class="hero">
+
+    <h2>Music Note Flashcards</h2>
+
+    <p>
+      Click the card to flip it and reveal the note type.
+    </p>
+
+  </section>
+
+  <!-- flashcard section -->
+  <section class="quiz-box">
+
+    <!-- outer flashcard container -->
+    <div id="flashcard" class="flashcard">
+
+      <!-- rotating inner card -->
+      <div class="flashcard-inner">
+
+        <!-- front side -->
+        <div class="flashcard-front">
+
+          <!-- displays the note symbol -->
+          <p id="flashcard-symbol">
+
+            ♩
+
+          </p>
+
+          <p class="caption">
+
+            Click to reveal answer
+
+          </p>
+
+        </div>
+
+        <!-- back side -->
+        <div class="flashcard-back">
+
+          <!-- displays the answer -->
+          <p id="flashcard-answer">
+
+            Quarter Note
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- loads another flashcard -->
+    <button class="btn" id="next-flashcard-btn">
+
+      Next Flashcard
+
+    </button>
+
+  </section>
+
+  <!-- connects JavaScript file -->
+  <script src="./main.js"></script>
+
+</body>
+</html>

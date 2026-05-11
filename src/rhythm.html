@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rhythm</title>
+
+  <!-- connects external CSS file -->
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+  <!-- top navigation bar -->
+  <nav class="navbar">
+
+    <h1>Sheet Music Guide</h1>
+
+    <!-- navigation links -->
+    <div>
+      <a href="index.html">Home</a>
+      <a href="notes.html">Notes</a>
+      <a href="key-signatures.html">Keys</a>
+      <a href="rhythm.html">Rhythm</a>
+      <a href="quiz.html">Quiz</a>
+    </div>
+
+  </nav>
+
+  <!-- main page introduction -->
+  <section class="hero">
+
+    <h2>Rhythm Clap Test</h2>
+
+    <p>
+      Generate a random rhythm, listen to it, and try clapping along.
+    </p>
+
+  </section>
+
+  <!-- main lesson section -->
+  <section class="lesson-section">
+
+    <!-- rhythm generator box -->
+    <div class="diagram-box">
+
+      <h3>Random Measure</h3>
+
+      <!-- displays the generated rhythm -->
+      <div class="measure-box">
+
+        <!-- JavaScript replaces this text with random rhythms -->
+        <p id="rhythm-display">
+
+          Click New Rhythm
+
+        </p>
+
+      </div>
+
+      <!-- generates a new random rhythm -->
+      <button class="btn" id="new-rhythm-btn">
+
+        New Rhythm
+
+      </button>
+
+      <!-- plays the generated rhythm audio -->
+      <button class="btn" id="play-rhythm-btn">
+
+        Play Rhythm
+
+      </button>
+
+      <!-- helper text updated by JavaScript -->
+      <p id="rhythm-status">
+
+        Generate a rhythm first.
+
+      </p>
+
+    </div>
+
+    <!-- explanation box -->
+    <div class="info-box">
+
+      <h3>How It Works</h3>
+
+      <p>
+        This rhythm test creates a random one-measure pattern in 4/4 time.
+        Press play and try clapping along with the clicks.
+      </p>
+
+      <p>
+        Quarter notes receive one beat, while eighth notes divide one beat
+        into two equal parts. Half notes last for two beats, meaning they
+        are held for twice as long as a quarter note.
+      </p>
+
+      <p>
+        Any note with a dot after it increases in length by half of its
+        original value. For example, a dotted quarter note lasts for one
+        and a half beats instead of only one beat.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- connects JavaScript functionality -->
+  <script src="./main.js"></script>
+
+</body>
+</html>
